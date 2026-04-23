@@ -7,6 +7,46 @@
     el.textContent = new Date().getFullYear();
   });
 
+  // ---------- Horaires dynamiques (carte contact : jour courant + statut ouvert) ----------
+  // Lun-Jeu & Dim : 9h - 23h59 | Ven : 9h - 2h (+1) | Sam : 9h - 3h (+1)
+  const hoursEls = document.querySelectorAll('[data-today-hours]');
+  const statusEls = document.querySelectorAll('[data-open-status]');
+  if (hoursEls.length || statusEls.length) {
+    const now = new Date();
+    const day = now.getDay(); // 0=Dim, 1=Lun ... 5=Ven, 6=Sam
+    const hour = now.getHours() + now.getMinutes() / 60;
+    const schedule = {
+      0: { label: '9h \u2014 23h59', open: 9,  close: 23.99 },
+      1: { label: '9h \u2014 23h59', open: 9,  close: 23.99 },
+      2: { label: '9h \u2014 23h59', open: 9,  close: 23.99 },
+      3: { label: '9h \u2014 23h59', open: 9,  close: 23.99 },
+      4: { label: '9h \u2014 23h59', open: 9,  close: 23.99 },
+      5: { label: '9h \u2014 2h',     open: 9,  close: 26 },   // vendredi : 2h du mat le lendemain
+      6: { label: '9h \u2014 3h',     open: 9,  close: 27 }    // samedi : 3h
+    };
+    const prevDay = (day + 6) % 7;
+    const prev = schedule[prevDay];
+    const today = schedule[day];
+    // On est encore "dans la soiree" du jour precedent ?
+    let isOpen = false;
+    if (prev.close > 24 && hour < prev.close - 24) {
+      isOpen = true;
+    } else if (hour >= today.open && hour < Math.min(today.close, 24)) {
+      isOpen = true;
+    }
+    hoursEls.forEach((el) => { el.textContent = today.label; });
+    statusEls.forEach((el) => {
+      el.textContent = isOpen ? 'Ouvert maintenant' : 'Ferm\u00e9 \u2014 ouvre \u00e0 9h';
+      const dot = el.parentElement && el.parentElement.querySelector('.dot');
+      if (dot) {
+        dot.style.background = isOpen ? '#8ee48e' : '#d47c45';
+        dot.style.boxShadow = isOpen
+          ? '0 0 0 3px rgba(142,228,142,.22)'
+          : '0 0 0 3px rgba(212,124,69,.22)';
+      }
+    });
+  }
+
   // ---------- Nav mobile ----------
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.getElementById('primary-nav');
@@ -23,6 +63,26 @@
         toggle.setAttribute('aria-expanded', 'false');
       })
     );
+  }
+
+  // ---------- Scroll-spy pour la navigation de la carte ----------
+  const toc = document.querySelector('.menu-toc');
+  if (toc && 'IntersectionObserver' in window) {
+    const tocLinks = toc.querySelectorAll('a[href^="#"]');
+    const sections = Array.from(tocLinks)
+      .map((a) => document.querySelector(a.getAttribute('href')))
+      .filter(Boolean);
+    if (sections.length) {
+      const spy = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            tocLinks.forEach((l) => l.classList.toggle('is-current', l.getAttribute('href') === '#' + id));
+          }
+        });
+      }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+      sections.forEach((s) => spy.observe(s));
+    }
   }
 
   // ---------- Marquee : dupliquer le contenu pour un loop sans saut ----------

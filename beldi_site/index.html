@@ -106,12 +106,12 @@
       <img src="assets/desert-scene.svg" alt="" />
     </div>
 
-    <!-- Video optionnelle (Pexels/Pixabay) : se superpose si elle charge, sinon masquee par JS -->
+    <!-- Video maison (Beldi Fusion) : se superpose si elle charge, sinon le fond SVG reste -->
     <video class="hero-desert-video"
            autoplay muted loop playsinline
            preload="metadata"
            poster=""
-           data-video-candidates='["https://cdn.pixabay.com/video/2020/04/03/35218-405583779_large.mp4","https://cdn.pixabay.com/video/2019/11/22/29022-374294925_large.mp4"]'
+           data-video-candidates='["assets/video/beldi-scene-03.mp4","assets/video/beldi-scene-01.mp4","assets/video/beldi-scene-02.mp4"]'
            aria-hidden="true"></video>
 
     <!-- Mot arabe geant (watermark) - parallaxe subtile -->
@@ -385,15 +385,74 @@
     </div>
   </section>
 
+  <!-- ========== TRIPTYQUE VIDEO : EN DIRECT DE NOS CUISINES ========== -->
+  <section class="section video-showcase" aria-label="En direct de nos cuisines">
+    <div class="container">
+      <div class="grid-12" style="align-items:end; margin-bottom:2.4rem">
+        <div class="col-7">
+          <div class="section-tag">
+            <span class="num">&#10047;</span>
+            <span>En direct &middot; Nos cuisines</span>
+          </div>
+          <h2 style="color:var(--ink); margin-top:.4rem">
+            <span class="word-reveal">Les mains</span>
+            <em class="word-reveal" style="color:var(--terra)">qui font</em>
+            <span class="word-reveal">la maison.</span>
+          </h2>
+        </div>
+        <div class="col-4 start-9">
+          <p style="color:var(--ink-2); max-width:42ch; margin:0; font-size:.95rem">
+            Trois instants captur&eacute;s derri&egrave;re le passe : le geste, la flamme, le partage.
+            Le meilleur de Beldi se regarde presque autant qu'il se go&ucirc;te.
+          </p>
+        </div>
+      </div>
+
+      <div class="video-triptych">
+        <figure class="video-card video-card-tall">
+          <video autoplay muted loop playsinline preload="metadata"
+                 data-video-candidates='["assets/video/beldi-scene-01.mp4"]'
+                 aria-label="Pr&eacute;paration en cuisine Beldi Fusion"></video>
+          <figcaption>
+            <span class="kicker">&#1632;&#1633; &middot; Le geste</span>
+            <span class="label">P&eacute;trissage du matin</span>
+          </figcaption>
+        </figure>
+        <figure class="video-card">
+          <video autoplay muted loop playsinline preload="metadata"
+                 data-video-candidates='["assets/video/beldi-scene-02.mp4"]'
+                 aria-label="Grillades et parfums en cuisine"></video>
+          <figcaption>
+            <span class="kicker">&#1632;&#1634; &middot; La flamme</span>
+            <span class="label">Grillade &agrave; la braise</span>
+          </figcaption>
+        </figure>
+        <figure class="video-card video-card-tall">
+          <video autoplay muted loop playsinline preload="metadata"
+                 data-video-candidates='["assets/video/beldi-scene-03.mp4"]'
+                 aria-label="Service et dressage en salle"></video>
+          <figcaption>
+            <span class="kicker">&#1632;&#1635; &middot; Le partage</span>
+            <span class="label">Dressage &amp; service</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <p style="text-align:center; margin-top:2.6rem">
+        <a href="galerie.html" class="btn btn-ghost">Voir la galerie compl&egrave;te <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      </p>
+    </div>
+  </section>
+
   <!-- ========== SECTION VIDEO : Saveurs d'Orient ========== -->
   <section class="section-video">
     <!-- Poster fallback (image statique) toujours visible en fond -->
     <img class="section-video-poster"
          src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=1600&q=85"
          alt="" aria-hidden="true" loading="lazy" />
-    <!-- Video optionnelle : le JS essaiera de charger ces URLs -->
+    <!-- Video maison (Beldi Fusion) : le JS gere le chargement paresseux + fallback poster -->
     <video autoplay muted loop playsinline preload="metadata"
-           data-video-candidates='["https://cdn.pixabay.com/video/2022/02/09/107158-675749167_large.mp4","https://cdn.pixabay.com/video/2019/05/20/23879-337885115_large.mp4"]'
+           data-video-candidates='["assets/video/beldi-scene-01.mp4","assets/video/beldi-scene-02.mp4","assets/video/beldi-scene-03.mp4"]'
            aria-hidden="true"></video>
 
     <div class="container">
@@ -540,11 +599,11 @@
   </section>
 
   <!-- ========== CHAPITRE 07 : L'adresse ========== -->
-  <section class="section">
+  <section class="section address-section">
     <span class="section-big-num" aria-hidden="true">&#1632;&#1639;</span>
     <div class="container">
-      <div class="grid-12" style="align-items:center">
-        <div class="col-5">
+      <div class="address-split">
+        <div class="address-text">
           <div class="section-tag">
             <span class="num">&#1632;&#1639;</span>
             <span>Chapitre VII &middot; L'adresse</span>
@@ -555,16 +614,16 @@
             <p>On allume le four &agrave; 6h30. On &eacute;teint tard. Certains vendredis, tr&egrave;s tard.</p>
             <p style="color:var(--ink-2); font-size:.88rem">Parking gratuit av. Henri-Desbals, 2&thinsp;min &agrave; pied.</p>
           </div>
-          <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.6rem">
+          <div class="address-cta">
             <a href="contact.html" class="btn btn-primary btn-magnetic btn-ribbon">Itin&eacute;raire &amp; horaires <span class="arrow">&rarr;</span></a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=43+avenue+de+Muret+Toulouse" target="_blank" rel="noopener" class="btn btn-ghost">Ouvrir Google Maps <span class="arrow">&rarr;</span></a>
           </div>
         </div>
-        <div class="col-6 start-7">
+        <div class="address-map">
           <iframe
             src="https://www.google.com/maps?q=43%20avenue%20de%20Muret%20Toulouse&output=embed"
             loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            title="Carte - 43 avenue de Muret Toulouse"
-            style="width:100%; height:420px; border:0; filter:grayscale(.1) sepia(.15)"></iframe>
+            title="Carte - 43 avenue de Muret Toulouse"></iframe>
         </div>
       </div>
     </div>

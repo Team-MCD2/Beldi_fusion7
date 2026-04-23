@@ -5,20 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="theme-color" content="#1C1412" />
 
-<title>La Carte &mdash; Beldi Fusion Toulouse | Brunchs, Sandwichs &amp; Grillades</title>
-<meta name="description" content="La carte compl&egrave;te de Beldi Fusion &agrave; Toulouse : brunch Beldi 20,10&euro;, sandwichs au pain marocain 13,50&euro;, brochettes 16-20&euro;, salades, smoothies et th&eacute; &agrave; la menthe." />
+<title>La Carte &mdash; Beldi Fusion Toulouse | Brunchs, Tajines, Grillades &amp; Sandwichs</title>
+<meta name="description" content="La carte compl&egrave;te de Beldi Fusion &agrave; Toulouse : brunchs d&egrave;s 11&euro;, tajines, couscous, grillades, sandwichs au pain marocain, salades, th&eacute; &agrave; la menthe et smoothies." />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://beldifusion-toulouse.fr/carte.html" />
 
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="fr_FR" />
 <meta property="og:title" content="La Carte - Beldi Fusion Toulouse" />
-<meta property="og:description" content="Brunchs, sandwichs au pain marocain, grillades, salades, smoothies." />
+<meta property="og:description" content="Brunchs, tajines, couscous, grillades et sandwichs au pain marocain." />
 <meta property="og:url" content="https://beldifusion-toulouse.fr/carte.html" />
 
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,30..100,0..1;1,9..144,300..700,30..100,0..1&family=Inter:wght@400;500;600&family=Reem+Kufi:wght@400;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css" />
 
@@ -27,15 +28,26 @@
   "@context":"https://schema.org","@type":"Menu","name":"Carte Beldi Fusion Toulouse",
   "hasMenuSection":[
     {"@type":"MenuSection","name":"Brunchs","hasMenuItem":[
-      {"@type":"MenuItem","name":"Brunch Beldi","offers":{"@type":"Offer","price":"20.10","priceCurrency":"EUR"}},
-      {"@type":"MenuItem","name":"Brunch Fermier","offers":{"@type":"Offer","price":"17.40","priceCurrency":"EUR"}},
-      {"@type":"MenuItem","name":"Brunch Classique","offers":{"@type":"Offer","price":"16.10","priceCurrency":"EUR"}}
-    ]},
-    {"@type":"MenuSection","name":"Sandwichs","hasMenuItem":[
-      {"@type":"MenuItem","name":"Sandwich Pain Marocain Kefta","offers":{"@type":"Offer","price":"13.50","priceCurrency":"EUR"}}
+      {"@type":"MenuItem","name":"Le Beldi","offers":{"@type":"Offer","price":"14.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Le Classique","offers":{"@type":"Offer","price":"11.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Le Fermier","offers":{"@type":"Offer","price":"12.00","priceCurrency":"EUR"}}
     ]},
     {"@type":"MenuSection","name":"Grillades","hasMenuItem":[
-      {"@type":"MenuItem","name":"Brochettes Mixte","offers":{"@type":"Offer","price":"20.10","priceCurrency":"EUR"}}
+      {"@type":"MenuItem","name":"Kefta","offers":{"@type":"Offer","price":"11.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Brochette Merguez","offers":{"@type":"Offer","price":"11.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Brochette de Poulet","offers":{"@type":"Offer","price":"12.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Brochette d'Agneau","offers":{"@type":"Offer","price":"14.00","priceCurrency":"EUR"}}
+    ]},
+    {"@type":"MenuSection","name":"Plats & Tajines","hasMenuItem":[
+      {"@type":"MenuItem","name":"Tajine au poulet","offers":{"@type":"Offer","price":"11.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Tajine boulettes boeuf-oeufs","offers":{"@type":"Offer","price":"12.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Tajine traditionnelle","offers":{"@type":"Offer","price":"15.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Tanjia","offers":{"@type":"Offer","price":"15.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Rfissa","offers":{"@type":"Offer","price":"14.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Couscous poulet","offers":{"@type":"Offer","price":"11.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Couscous boeuf","offers":{"@type":"Offer","price":"14.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Couscous mixte","offers":{"@type":"Offer","price":"16.00","priceCurrency":"EUR"}},
+      {"@type":"MenuItem","name":"Couscous v&eacute;g&eacute;tarien","offers":{"@type":"Offer","price":"11.00","priceCurrency":"EUR"}}
     ]}
   ]
 }
@@ -86,7 +98,6 @@
         <span aria-hidden="true">&rsaquo;</span>
         <span aria-current="page">La carte</span>
       </nav>
-      <!-- Illustration tajine flottante -->
       <img src="assets/illus-tajine.svg" class="illus illus-float"
            style="position:absolute; right:2rem; top:-1rem; width:clamp(110px, 12vw, 180px); z-index:1"
            alt="" aria-hidden="true" />
@@ -100,156 +111,493 @@
     <img class="camel camel-3" src="assets/illus-camel.svg" alt="" />
   </div>
 
-  <section class="section">
+  <!-- Intro carte -->
+  <section class="section" style="padding-bottom:1.2rem">
     <div class="container">
       <div class="grid-12" style="align-items:end">
         <div class="col-7">
-          <p class="prose" style="max-width:56ch">
+          <p class="prose" style="max-width:58ch">
             Tous nos plats sont pr&eacute;par&eacute;s minute, &agrave; la commande, avec des
-            produits frais et halal. Les prix indiqu&eacute;s sont ceux de la livraison.
-            Variations possibles sur place.
+            produits frais et halal. Pains p&eacute;tris le matin, &eacute;pices dos&eacute;es &agrave; la
+            main, viande trac&eacute;e. Les prix indiqu&eacute;s sont TTC, service compris.
           </p>
         </div>
         <div class="col-4 start-9" style="text-align:right">
           <p style="font-family:var(--font-display); font-style:italic; color:var(--terra); font-size:1.4rem; line-height:1.2; margin:0">
-            &laquo; Min, al-bayt &raquo;
+            &laquo; Min al-bayt &raquo;
           </p>
           <p style="font-size:.78rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-2); margin:.4rem 0 0">
             De la maison, comme &agrave; la maison
           </p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="tabs" role="tablist" aria-label="Cat&eacute;gories du menu">
-        <button role="tab" class="tab is-active" aria-selected="true" data-tab="brunch">Brunchs</button>
-        <button role="tab" class="tab" aria-selected="false" data-tab="sandwich">Sandwichs</button>
-        <button role="tab" class="tab" aria-selected="false" data-tab="grill">Grillades</button>
-        <button role="tab" class="tab" aria-selected="false" data-tab="salad">Salades</button>
-        <button role="tab" class="tab" aria-selected="false" data-tab="drinks">Boissons</button>
+  <!-- Navigation ancres (sticky) -->
+  <nav class="menu-toc" aria-label="Navigation de la carte">
+    <div class="container menu-toc-inner">
+      <a href="#brunchs">Brunchs</a>
+      <a href="#beldis">Les Beldi's</a>
+      <a href="#salades">Salades</a>
+      <a href="#grillades">Grillades</a>
+      <a href="#sandwichs">Sandwichs</a>
+      <a href="#tajines">Tajines &amp; Couscous</a>
+      <a href="#boissons">Boissons</a>
+    </div>
+  </nav>
+
+  <!-- ========== BRUNCHS ========== -->
+  <section class="section menu-section" id="brunchs">
+    <div class="container">
+      <div class="menu-section-head">
+        <div>
+          <div class="section-tag">
+            <span class="num">&#1632;&#1633;</span>
+            <span>Nos brunchs</span>
+          </div>
+          <h2>Brunchs
+            <em>du matin.</em>
+          </h2>
+          <p class="menu-section-desc">
+            Servi avec <strong>boisson chaude ou froide au choix</strong>.
+            Le samedi et le dimanche, jusqu'&agrave; 14h.
+          </p>
+        </div>
+        <figure class="menu-section-photo">
+          <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=85"
+               alt="Plateau de brunch Beldi avec msemen, harcha et amlou" loading="lazy" />
+        </figure>
       </div>
 
-      <!-- Brunchs -->
-      <div class="menu-pane" data-pane="brunch">
+      <div class="dish-grid">
         <article class="dish">
-          <span class="dish-name">Brunch Beldi</span>
-          <span class="dish-price">20,10 &euro;</span>
-          <span class="flag">Le plus command&eacute;</span>
-          <p>&OElig;ufs au khli, msemen, harcha, baghrir, amlou, huile d'olive, olives noires, miel, fromage, orange &agrave; la cannelle. Boisson au choix.</p>
+          <span class="dish-name">Le Beldi</span>
+          <span class="dish-price">14,00 &euro;</span>
+          <span class="flag">Best-seller</span>
+          <p>&OElig;ufs au khlii, msemen, harcha, baghrir, amlou, huile d'olive, olives noires, miel, fromage, orange &agrave; la cannelle.</p>
         </article>
         <article class="dish">
-          <span class="dish-name">Brunch Fermier</span>
-          <span class="dish-price">17,40 &euro;</span>
-          <p>Omelette frites, tranches de poulet grill&eacute;, fromage blanc, miel, noix, fromage, beurre et confiture. Boisson au choix.</p>
+          <span class="dish-name">Le Classique</span>
+          <span class="dish-price">11,00 &euro;</span>
+          <p>&OElig;ufs cuisson au choix, soupe du jour, toast jambon de dinde et fromage, fromage, beurre, confiture, petit pain.</p>
         </article>
         <article class="dish">
-          <span class="dish-name">Brunch Classique</span>
-          <span class="dish-price">16,10 &euro;</span>
-          <p>&OElig;ufs cuisson au choix, soupe du jour, toast jambon de dinde &amp; fromage, fromage, beurre, confiture, petit pain. Boisson au choix.</p>
-        </article>
-      </div>
-
-      <!-- Sandwichs -->
-      <div class="menu-pane" data-pane="sandwich" hidden>
-        <article class="dish">
-          <span class="dish-name">Pain marocain &mdash; Poulet</span>
-          <span class="dish-price">13,50 &euro;</span>
-          <p>Pain marocain, base beldi (confit tomate, oignons, coriandre), salade, tomates, oignons, olives, frites maison, sauce au choix.</p>
-        </article>
-        <article class="dish">
-          <span class="dish-name">Pain marocain &mdash; Kefta</span>
-          <span class="dish-price">13,50 &euro;</span>
-          <p>Pain marocain, kefta maison, base beldi, frites maison, sauce au choix.</p>
-        </article>
-        <article class="dish">
-          <span class="dish-name">Pain marocain &mdash; Merguez</span>
-          <span class="dish-price">13,50 &euro;</span>
-          <span class="flag">Populaire</span>
-          <p>Pain marocain, merguez grill&eacute;es, base beldi, frites maison, sauce au choix.</p>
-        </article>
-        <article class="dish">
-          <span class="dish-name">Pain baguette &mdash; Poulet</span>
-          <span class="dish-price">13,50 &euro;</span>
-          <p>Pain baguette, salade, tomates, oignons, olives, frites maison et sauce au choix.</p>
-        </article>
-        <article class="dish">
-          <span class="dish-name">Pain baguette &mdash; Kefta</span>
-          <span class="dish-price">13,50 &euro;</span>
-          <p>Pain baguette, kefta maison, salade, tomates, oignons, olives, frites maison et sauce au choix.</p>
-        </article>
-        <article class="dish">
-          <span class="dish-name">Pain baguette &mdash; Merguez</span>
-          <span class="dish-price">13,50 &euro;</span>
-          <p>Pain baguette, merguez grill&eacute;es, salade, tomates, oignons, olives, frites maison et sauce au choix.</p>
+          <span class="dish-name">Le Fermier</span>
+          <span class="dish-price">12,00 &euro;</span>
+          <p>Omelette frites, tranches de poulet grill&eacute;, fromage blanc, miel, noix, fromage, beurre, confiture.</p>
         </article>
       </div>
 
-      <!-- Grillades -->
-      <div class="menu-pane" data-pane="grill" hidden>
+      <p class="menu-note">
+        <span class="menu-note-label">Bon &agrave; savoir</span>
+        Nous pouvons ajouter tout ingr&eacute;dient en suppl&eacute;ment au brunch.
+        Tout suppl&eacute;ment est &agrave; <strong>2&thinsp;&euro;</strong>, n'h&eacute;sitez pas &agrave; nous solliciter&thinsp;!
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== LES BELDI'S ========== -->
+  <section class="section menu-section" id="beldis" style="background:var(--cream)">
+    <div class="container">
+      <div class="menu-section-head reverse">
+        <div>
+          <div class="section-tag">
+            <span class="num">&#1632;&#1634;</span>
+            <span>Les Beldi's &middot; intemporels</span>
+          </div>
+          <h2>Les petits
+            <em>plaisirs Beldi.</em>
+          </h2>
+          <p class="menu-section-desc">
+            Des entr&eacute;es et snacks inspir&eacute;s de nos souvenirs d'enfance,
+            &agrave; partager ou &agrave; d&eacute;guster seul.
+          </p>
+        </div>
+        <figure class="menu-section-photo">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85"
+               alt="Bol de soupe marocaine et briks dor&eacute;s" loading="lazy" />
+        </figure>
+      </div>
+
+      <div class="dish-grid">
         <article class="dish">
-          <span class="dish-name">Brochettes de Poulet</span>
-          <span class="dish-price">17,40 &euro;</span>
-          <p>Marinade aux &eacute;pices douces, servies avec salade, frites maison et sauce au choix.</p>
+          <span class="dish-name">Soupe du moment</span>
+          <span class="dish-price">5,00 &euro;</span>
+          <p>La soupe pr&eacute;par&eacute;e ce jour-l&agrave;, selon l'inspiration du chef.</p>
         </article>
+        <article class="dish">
+          <span class="dish-name">Velout&eacute; de pois cass&eacute;</span>
+          <span class="dish-price">6,00 &euro;</span>
+          <p>Onctueux, aux &eacute;pices douces et filet d'huile d'olive.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">Petit tajine au khlii</span>
+          <span class="dish-price">6,00 &euro;</span>
+          <p>Le khlii, viande s&eacute;ch&eacute;e et confite, servi dans son tajine individuel.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">Bourek kefta / fromage</span>
+          <span class="dish-price">3,00 &euro;</span>
+          <p>Brick dor&eacute;e, kefta &eacute;pic&eacute;e et fromage fondant &agrave; l'int&eacute;rieur.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">La fameuse omelette frites</span>
+          <span class="dish-price">6,00 &euro;</span>
+          <p>Omelette g&eacute;n&eacute;reuse, frites maison dedans.
+          <span class="supplements">Sup. Kefta +2&euro; &middot; Sup. Vache qui rit +2&euro;</span></p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">Pastilla poulet</span>
+          <span class="dish-price">8,00 &euro;</span>
+          <span class="flag">Signature</span>
+          <p>Feuillet&eacute; au poulet, amandes, cannelle et sucre glace. Le sucr&eacute;-sal&eacute; marocain.</p>
+        </article>
+      </div>
+
+      <!-- Menu enfant -->
+      <div class="menu-kids">
+        <div>
+          <div class="section-tag">
+            <span class="num">&#1632;&#1633;</span>
+            <span>Menu enfant</span>
+          </div>
+          <h3>Pour les petits Beldi.</h3>
+        </div>
+        <article class="dish dish-plain">
+          <span class="dish-name">Nuggets et Frites</span>
+          <span class="dish-price">8,00 &euro;</span>
+          <p>Avec une boisson au choix.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SALADES ========== -->
+  <section class="section menu-section" id="salades">
+    <div class="container">
+      <div class="menu-section-head">
+        <div>
+          <div class="section-tag">
+            <span class="num">&#1632;&#1635;</span>
+            <span>Nos petites salades</span>
+          </div>
+          <h2>Fra&icirc;cheur
+            <em>du march&eacute;.</em>
+          </h2>
+          <p class="menu-section-desc">
+            &Agrave; partager en entr&eacute;e ou &agrave; compl&eacute;ter votre plat.
+          </p>
+        </div>
+        <figure class="menu-section-photo">
+          <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=85"
+               alt="Chakchouka marocaine color&eacute;e" loading="lazy" />
+        </figure>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish">
+          <span class="dish-name">La Chakchouka</span>
+          <span class="dish-price">3,00 &euro;</span>
+          <p>Confit de poivrons, oignons, tomates, mijot&eacute; au cumin.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">La Marocaine</span>
+          <span class="dish-price">3,00 &euro;</span>
+          <p>Oignons rouges, tomates, concombres, huile d'olive.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">La Fra&icirc;cheur</span>
+          <span class="dish-price">3,00 &euro;</span>
+          <p>Salade verte, tomates, oignons, olives noires.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GRILLADES ========== -->
+  <section class="section menu-section" id="grillades" style="background:var(--cream)">
+    <div class="container">
+      <div class="menu-section-head reverse">
+        <div>
+          <div class="section-tag">
+            <span class="num">&#1632;&#1636;</span>
+            <span>Nos grillades</span>
+          </div>
+          <h2>Viandes
+            <em>&agrave; la braise.</em>
+          </h2>
+          <p class="menu-section-desc">
+            Servi avec <strong>salade, frites et sauce au choix</strong>&nbsp;:
+            blanche, alg&eacute;rienne, marocaine, harissa ou mayonnaise.
+          </p>
+        </div>
+        <figure class="menu-section-photo">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=85"
+               alt="Brochettes de viande grill&eacute;es" loading="lazy" />
+        </figure>
+      </div>
+
+      <div class="dish-grid">
         <article class="dish">
           <span class="dish-name">Kefta</span>
-          <span class="dish-price">16,10 &euro;</span>
+          <span class="dish-price">11,00 &euro;</span>
           <span class="flag">Populaire</span>
-          <p>Boulettes de viande hach&eacute;e aux herbes, salade, frites, sauce au choix.</p>
+          <p>Boulettes de viande hach&eacute;e aux herbes et &eacute;pices, grill&eacute;es minute.</p>
         </article>
         <article class="dish">
-          <span class="dish-name">Brochettes Merguez</span>
-          <span class="dish-price">16,10 &euro;</span>
-          <p>Merguez grill&eacute;es, salade, frites maison et sauce au choix.</p>
+          <span class="dish-name">Brochette merguez</span>
+          <span class="dish-price">11,00 &euro;</span>
+          <p>Merguez artisanales, grill&eacute;es &agrave; point.</p>
         </article>
         <article class="dish">
-          <span class="dish-name">Brochettes Mixte</span>
-          <span class="dish-price">20,10 &euro;</span>
-          <p>Kefta, poulet et merguez, salade, frites maison, sauce au choix.</p>
+          <span class="dish-name">Brochette de poulet</span>
+          <span class="dish-price">12,00 &euro;</span>
+          <p>Filets de poulet marin&eacute;s, &eacute;pices douces et citron.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">Brochette d'agneau</span>
+          <span class="dish-price">14,00 &euro;</span>
+          <p>Cubes d'agneau marin&eacute;s au ras-el-hanout et menthe fra&icirc;che.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SANDWICHS ========== -->
+  <section class="section menu-section" id="sandwichs">
+    <div class="container">
+      <div class="menu-section-head">
+        <div>
+          <div class="section-tag">
+            <span class="num">&#1632;&#1637;</span>
+            <span>Nos sandwichs</span>
+          </div>
+          <h2>Le pain
+            <em>qui fait tout.</em>
+          </h2>
+          <p class="menu-section-desc">
+            <strong>Seul 8&thinsp;&euro; &middot; Menu 10&thinsp;&euro;</strong> (avec frites &amp; boisson).
+            Au choix&nbsp;: poulet, agneau, kefta ou merguez.
+          </p>
+        </div>
+        <figure class="menu-section-photo">
+          <img src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=800&q=85"
+               alt="Sandwich au pain marocain garni" loading="lazy" />
+        </figure>
+      </div>
+
+      <div class="sandwich-split">
+        <div class="dish dish-plain">
+          <span class="dish-name">Pain marocain</span>
+          <span class="dish-price">8 / 10 &euro;</span>
+          <p>Pain marocain p&eacute;tri le matin. Avec notre <strong>base Beldi</strong> : confit de tomate, oignons et coriandre.</p>
+          <ul class="choice-list">
+            <li>Poulet</li>
+            <li>Agneau</li>
+            <li>Kefta</li>
+            <li>Merguez</li>
+          </ul>
+        </div>
+
+        <div class="dish dish-plain">
+          <span class="dish-name">Pain baguette</span>
+          <span class="dish-price">8 / 10 &euro;</span>
+          <p>Baguette fra&icirc;che du jour, viande grill&eacute;e, salade &amp; frites maison.</p>
+          <ul class="choice-list">
+            <li>Poulet</li>
+            <li>Agneau</li>
+            <li>Kefta</li>
+            <li>Merguez</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu-inset">
+        <div class="menu-inset-box">
+          <p class="menu-inset-label">Formule <span>Seul 8&euro; / Menu 10&euro;</span></p>
+          <p class="menu-inset-body">
+            Salade, tomates, oignons, olives. Frites maison et sauce au choix&nbsp;:
+            <em>Blanche, Alg&eacute;rienne, Marocaine, Harissa, Mayonnaise.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TAJINES & COUSCOUS ========== -->
+  <section class="section menu-section" id="tajines" style="background:var(--cream)">
+    <div class="container">
+      <div class="menu-section-head reverse">
+        <div>
+          <div class="section-tag">
+            <span class="num">&#1632;&#1638;</span>
+            <span>Nos plats &amp; tajines</span>
+          </div>
+          <h2>Tajines
+            <em>&amp; couscous.</em>
+          </h2>
+          <p class="menu-section-desc">
+            Les classiques du pays, mijot&eacute;s lentement dans leur plat en terre cuite.
+          </p>
+        </div>
+        <figure class="menu-section-photo">
+          <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=85"
+               alt="Tajine marocain traditionnel" loading="lazy" />
+        </figure>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish">
+          <span class="dish-name">Tajine au poulet</span>
+          <span class="dish-price">11,00 &euro;</span>
+          <p>Poulet mijot&eacute; aux olives et frites maison (ou l&eacute;gumes).</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">Tajine de boulettes de boeuf aux &oelig;ufs</span>
+          <span class="dish-price">12,00 &euro;</span>
+          <p>Boulettes de boeuf, &oelig;ufs, frites maison et sauce tomate parfum&eacute;e.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">Tajine traditionnelle</span>
+          <span class="dish-price">15,00 &euro;</span>
+          <span class="flag">Maison</span>
+          <p>Jarret de veau, pruneaux, abricots, &oelig;uf dur et amandes. Le vrai sucr&eacute;-sal&eacute;.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">Tanjia</span>
+          <span class="dish-price">15,00 &euro;</span>
+          <p>Jarret de veau confit, lentement, dans la jarre en terre. Sp&eacute;cialit&eacute; marrakchie.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">Rfissa</span>
+          <span class="dish-price">14,00 &euro;</span>
+          <p>Msemen effeuill&eacute;, poulet, lentilles et fenugrec. Plat r&eacute;confortant par excellence.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">Couscous poulet</span>
+          <span class="dish-price">11,00 &euro;</span>
+          <p>Semoule roul&eacute;e &agrave; la main, poulet mijot&eacute;, pois chiches.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">Couscous boeuf</span>
+          <span class="dish-price">14,00 &euro;</span>
+          <p>Semoule roul&eacute;e &agrave; la main, boeuf mijot&eacute;, pois chiches.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">Couscous mixte</span>
+          <span class="dish-price">16,00 &euro;</span>
+          <span class="flag">Royal</span>
+          <p>Merguez, boeuf, poulet &mdash; la version royale pour les grandes faims.</p>
+        </article>
+        <article class="dish">
+          <span class="dish-name">Couscous v&eacute;g&eacute;tarien</span>
+          <span class="dish-price">11,00 &euro;</span>
+          <p>Semoule, pois chiches et l&eacute;gumes de saison.</p>
         </article>
       </div>
 
-      <!-- Salades -->
-      <div class="menu-pane" data-pane="salad" hidden>
-        <article class="dish">
-          <span class="dish-name">Salade Beldi</span>
-          <span class="dish-price">d&egrave;s 6,90 &euro;</span>
-          <p>Salade fra&icirc;che du march&eacute;, tomates confites, olives noires, huile d'olive et citron.</p>
-        </article>
-        <article class="dish">
-          <span class="dish-name">Salade Poulet grill&eacute;</span>
-          <span class="dish-price">d&egrave;s 9,90 &euro;</span>
-          <p>Salade compos&eacute;e, poulet grill&eacute; aux &eacute;pices, sauce maison.</p>
-        </article>
-        <article class="dish">
-          <span class="dish-name">Salade Kefta</span>
-          <span class="dish-price">d&egrave;s 9,90 &euro;</span>
-          <p>Salade compos&eacute;e, boulettes de kefta, coriandre fra&icirc;che, sauce maison.</p>
-        </article>
+      <p class="menu-note">
+        <span class="menu-note-label">Accompagnement</span>
+        Nos couscous sont accompagn&eacute;s de l&eacute;gumes&nbsp;: carottes, courgettes, navets, pois chiches.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== BOISSONS ========== -->
+  <section class="section menu-section" id="boissons">
+    <div class="container">
+      <div class="menu-section-head">
+        <div>
+          <div class="section-tag">
+            <span class="num">&#1632;&#1639;</span>
+            <span>Boissons</span>
+          </div>
+          <h2>Th&eacute;s, caf&eacute;s
+            <em>et fra&icirc;cheurs.</em>
+          </h2>
+          <p class="menu-section-desc">
+            Le th&eacute; &agrave; la menthe servi dans la tradition, vers&eacute; de haut.
+            Caf&eacute;s s&eacute;lectionn&eacute;s et jus press&eacute;s minute.
+          </p>
+        </div>
+        <figure class="menu-section-photo">
+          <img src="https://images.unsplash.com/photo-1556679343-c1c1c9308a08?auto=format&fit=crop&w=800&q=85"
+               alt="Verres de th&eacute; &agrave; la menthe marocain" loading="lazy" />
+        </figure>
       </div>
 
-      <!-- Boissons -->
-      <div class="menu-pane" data-pane="drinks" hidden>
-        <article class="dish">
-          <span class="dish-name">Th&eacute; &agrave; la menthe</span>
-          <span class="dish-price">3,00 &euro;</span>
-          <p>Vert Gunpowder, menthe fra&icirc;che, servi dans la tradition.</p>
-        </article>
-        <article class="dish">
-          <span class="dish-name">Smoothie Avocat-Amande</span>
-          <span class="dish-price">5,50 &euro;</span>
-          <p>Le classique marocain : avocat, lait, amandes, miel.</p>
-        </article>
-        <article class="dish">
-          <span class="dish-name">Jus d'orange press&eacute;</span>
-          <span class="dish-price">4,50 &euro;</span>
-          <p>100 % fruits press&eacute;s minute.</p>
-        </article>
-        <article class="dish">
-          <span class="dish-name">Caf&eacute; / Noisette / Allong&eacute;</span>
-          <span class="dish-price">d&egrave;s 1,80 &euro;</span>
-          <p>Arabica torr&eacute;fi&eacute;, expresso serr&eacute; ou allong&eacute;.</p>
-        </article>
+      <div class="drinks-grid">
+
+        <div class="drinks-col">
+          <h3 class="drinks-title">Nos th&eacute;s</h3>
+          <ul class="drinks-list">
+            <li><span>Th&eacute; &agrave; la menthe</span><span class="p">1,00 &euro;</span></li>
+            <li><span>Th&eacute; noir &agrave; la turque</span><span class="p">1,50 &euro;</span></li>
+            <li><span>Th&eacute; blanc</span><span class="p">2,50 &euro;</span></li>
+            <li><span>Th&eacute; vert jasmin</span><span class="p">2,50 &euro;</span></li>
+          </ul>
+        </div>
+
+        <div class="drinks-col">
+          <h3 class="drinks-title">Nos caf&eacute;s</h3>
+          <ul class="drinks-list">
+            <li><span>Caf&eacute; espresso</span><span class="p">1,50 &euro;</span></li>
+            <li><span>Caf&eacute; allong&eacute;</span><span class="p">1,50 &euro;</span></li>
+            <li><span>Caf&eacute; marocain</span><span class="p">1,50 &euro;</span></li>
+            <li><span>Caf&eacute; am&eacute;ricain</span><span class="p">2,00 &euro;</span></li>
+          </ul>
+        </div>
+
+        <div class="drinks-col">
+          <h3 class="drinks-title">Nos lattes</h3>
+          <ul class="drinks-list">
+            <li><span>Latte macchiato</span><span class="p">2,00 &euro;</span></li>
+            <li><span>Cappuccino</span><span class="p">2,50 &euro;</span></li>
+            <li><span>Chocolat chaud</span><span class="p">3,00 &euro;</span></li>
+            <li><span>Mocaccino</span><span class="p">3,00 &euro;</span></li>
+          </ul>
+        </div>
+
+        <div class="drinks-col drinks-col-wide">
+          <h3 class="drinks-title">Nos boissons fra&icirc;ches</h3>
+          <ul class="drinks-list">
+            <li>
+              <span>
+                <strong>Jus en bouteille</strong>
+                <em class="detail">Pomme, banane, ananas, orange, fraise</em>
+              </span>
+              <span class="p">3,00 &euro;</span>
+            </li>
+            <li>
+              <span>
+                <strong>Jus frais</strong>
+                <em class="detail">Le Beldi (avocat, amandes, dattes, noix) &middot; Le Fusion (carottes, gingembre, orange, banane) &middot; Le Classique (oranges press&eacute;es)</em>
+              </span>
+              <span class="p">5,00 &euro;</span>
+            </li>
+            <li>
+              <span>
+                <strong>Smoothies</strong>
+                <em class="detail">Banane, fraise, mangue</em>
+              </span>
+              <span class="p">6,00 &euro;</span>
+            </li>
+            <li>
+              <span>
+                <strong>Canettes</strong>
+                <em class="detail">Lipton, Oasis tropical, Coca, Perrier, Hawa&iuml;, Fanta, Sprite, Pom's &middot; bouteille d'eau</em>
+              </span>
+              <span class="p">2,00 &euro;</span>
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <!-- Bouton retour haut -->
+      <p style="text-align:center; margin-top:3rem">
+        <a href="#top" class="btn btn-ghost">Retour en haut <span class="arrow" aria-hidden="true">&uarr;</span></a>
+      </p>
     </div>
   </section>
 
@@ -259,7 +607,7 @@
       <div class="grid-12" style="align-items:center">
         <div class="col-6">
           <div class="section-tag" style="color:rgba(251,244,228,.75)">
-            <span class="num" style="color:var(--saffron)">&#1632;&#1634;</span>
+            <span class="num" style="color:var(--saffron)">&#1632;&#1640;</span>
             <span>Livraison</span>
           </div>
           <h2>Envie de Beldi<br/><em>chez vous ?</em></h2>
