@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Tampon fait maison">
+  <defs>
+    <path id="maison-circle" d="M 80,80 m -58,0 a 58,58 0 1,1 116,0 a 58,58 0 1,1 -116,0"/>
+    <path id="maison-circle-bottom" d="M 80,80 m 58,0 a 58,58 0 1,0 -116,0"/>
+  </defs>
+  <path d="M 80,14
+           Q 100,10 116,20 Q 136,28 144,46 Q 148,62 146,78
+           Q 150,96 140,112 Q 128,132 108,140 Q 92,148 78,146
+           Q 58,150 42,138 Q 22,128 16,108 Q 10,92 14,76
+           Q 10,58 22,42 Q 34,22 54,16 Q 68,8 80,14 Z"
+        fill="none" stroke="#E9A23B" stroke-width="2.5" opacity=".9"/>
+  <circle cx="80" cy="80" r="52" fill="none" stroke="#E9A23B" stroke-width="1.2" opacity=".6"/>
+
+  <text font-family="'Fraunces', serif" font-weight="600" font-size="13" fill="#E9A23B" letter-spacing="3">
+    <textPath href="#maison-circle" startOffset="2%">FAIT MAISON &#9671; RECETTES FAMILIALES</textPath>
+  </text>
+  <text font-family="'Fraunces', serif" font-weight="400" font-style="italic" font-size="10" fill="#E9A23B" letter-spacing="2">
+    <textPath href="#maison-circle-bottom" startOffset="15%">PAIN PETRI CHAQUE MATIN &#8212; DEPUIS 2020</textPath>
+  </text>
+
+  <!-- Icone petite maison stylisee + main -->
+  <g transform="translate(80 80)">
+    <!-- Toit -->
+    <path d="M -20,0 L 0,-18 L 20,0 Z" fill="none" stroke="#E9A23B" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Corps -->
+    <rect x="-15" y="0" width="30" height="18" fill="none" stroke="#E9A23B" stroke-width="2"/>
+    <!-- Porte -->
+    <rect x="-4" y="8" width="8" height="10" fill="#E9A23B" opacity=".8"/>
+    <!-- Cheminee avec fumee -->
+    <rect x="8" y="-14" width="4" height="8" fill="#E9A23B"/>
+    <path d="M 10,-14 Q 14,-20 10,-26 Q 6,-32 10,-38" fill="none" stroke="#E9A23B" stroke-width="1.2" opacity=".7"/>
+
+    <text text-anchor="middle" y="36" font-family="'Fraunces', serif" font-weight="700" font-style="italic" font-size="13" fill="#E9A23B">&bull; maison &bull;</text>
+  </g>
+</svg>

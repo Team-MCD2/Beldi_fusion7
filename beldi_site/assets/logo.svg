@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" role="img" aria-label="Beldi Fusion">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3E1C7"/>
+      <stop offset="1" stop-color="#E8A479"/>
+    </linearGradient>
+    <linearGradient id="dune1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D88754"/>
+      <stop offset="1" stop-color="#B5553E"/>
+    </linearGradient>
+    <linearGradient id="dune2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9935F"/>
+      <stop offset="1" stop-color="#9E4A35"/>
+    </linearGradient>
+    <clipPath id="arch">
+      <path d="M20 260 V100 C20 55 55 20 100 20 S180 55 180 100 V260 Z"/>
+    </clipPath>
+  </defs>
+  <!-- Cadre arche -->
+  <path d="M20 260 V100 C20 55 55 20 100 20 S180 55 180 100 V260 Z" fill="#3E2723"/>
+  <path d="M26 258 V100 C26 58 60 26 100 26 S174 58 174 100 V258 Z" fill="url(#sky)" clip-path="url(#arch)"/>
+  <!-- Dunes -->
+  <g clip-path="url(#arch)">
+    <path d="M0 200 Q60 170 120 190 T260 195 V260 H0 Z" fill="url(#dune2)"/>
+    <path d="M0 220 Q70 195 130 215 T260 220 V260 H0 Z" fill="url(#dune1)"/>
+  </g>
+  <!-- Portrait stylisé : capuche / djellaba -->
+  <g transform="translate(100 155)" clip-path="url(#arch)">
+    <!-- épaules djellaba -->
+    <path d="M-60 80 C-40 40 40 40 60 80 V110 H-60 Z" fill="#2A1A14"/>
+    <!-- visage -->
+    <ellipse cx="0" cy="10" rx="34" ry="42" fill="#E8C7A0"/>
+    <!-- ombre visage -->
+    <path d="M-34 5 C-30 40 30 40 34 5 L34 25 C30 50 -30 50 -34 25 Z" fill="#C9935F" opacity=".35"/>
+    <!-- capuche chachia pointue -->
+    <path d="M-36 -15 C-40 -70 40 -70 36 -15 C38 0 -38 0 -36 -15 Z" fill="#2A1A14"/>
+    <circle cx="0" cy="-72" r="6" fill="#2A1A14"/>
+    <!-- barbe -->
+    <path d="M-22 30 C-20 55 20 55 22 30 C18 50 -18 50 -22 30 Z" fill="#F3E4CC"/>
+    <!-- yeux -->
+    <circle cx="-11" cy="5" r="2" fill="#2A1A14"/>
+    <circle cx="11" cy="5" r="2" fill="#2A1A14"/>
+    <!-- sourire -->
+    <path d="M-8 22 Q0 28 8 22" stroke="#2A1A14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Bandeau bas -->
+  <rect x="20" y="228" width="160" height="32" fill="#3E2723" clip-path="url(#arch)"/>
+  <text x="100" y="250" text-anchor="middle" font-family="'Tangerine','Dancing Script',cursive" font-size="24" fill="#F3E4CC" font-weight="700">Beldi Fusion</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Tampon halal certifie">
+  <defs>
+    <path id="halal-circle" d="M 80,80 m -58,0 a 58,58 0 1,1 116,0 a 58,58 0 1,1 -116,0"/>
+    <path id="halal-circle-bottom" d="M 80,80 m 58,0 a 58,58 0 1,0 -116,0"/>
+  </defs>
+  <!-- Bord externe du tampon avec irregularites (pas un cercle parfait) -->
+  <path d="M 80,12
+           Q 98,10 112,18 Q 132,22 142,40 Q 150,55 148,75
+           Q 152,95 142,112 Q 130,132 110,140 Q 95,150 78,148
+           Q 60,152 44,142 Q 22,132 14,112 Q 8,95 12,78
+           Q 8,60 20,44 Q 32,22 52,14 Q 65,8 80,12 Z"
+        fill="none" stroke="#C84B31" stroke-width="2.5" opacity=".85"/>
+  <!-- Cercle interne -->
+  <circle cx="80" cy="80" r="52" fill="none" stroke="#C84B31" stroke-width="1.2" opacity=".6"/>
+
+  <!-- Texte haut courbe -->
+  <text font-family="'Fraunces', serif" font-weight="600" font-size="13" fill="#C84B31" letter-spacing="3">
+    <textPath href="#halal-circle" startOffset="2%">CERTIFIE HALAL &#9671; VIANDE TRACABLE</textPath>
+  </text>
+  <!-- Texte bas courbe -->
+  <text font-family="'Fraunces', serif" font-weight="400" font-style="italic" font-size="10" fill="#C84B31" letter-spacing="2">
+    <textPath href="#halal-circle-bottom" startOffset="18%">BELDI FUSION &#8212; TOULOUSE &#8212; 31300</textPath>
+  </text>
+
+  <!-- Etoile centrale marocaine -->
+  <g transform="translate(80 80)">
+    <path d="M 0,-22 L 6,-6 L 22,-6 L 10,6 L 14,22 L 0,12 L -14,22 L -10,6 L -22,-6 L -6,-6 Z"
+          fill="none" stroke="#C84B31" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="4" fill="#C84B31"/>
+    <!-- Mot arabe halal (transliteration stylisee) -->
+    <text text-anchor="middle" y="38" font-family="'Reem Kufi', sans-serif" font-weight="700" font-size="14" fill="#C84B31">&#1581;&#1604;&#1575;&#1604;</text>
+  </g>
+
+  <!-- Petites etoilles decoratives -->
+  <g fill="#C84B31" opacity=".7">
+    <circle cx="30" cy="80" r="1.5"/>
+    <circle cx="130" cy="80" r="1.5"/>
+  </g>
+</svg>

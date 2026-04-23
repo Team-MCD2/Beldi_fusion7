@@ -1,0 +1,13 @@
+{
+  "name": "Beldi Fusion Toulouse",
+  "short_name": "Beldi Fusion",
+  "description": "Restaurant marocain fusion à Toulouse — brunch Beldi, sandwichs au pain marocain, grillades.",
+  "lang": "fr-FR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF3E7",
+  "theme_color": "#3E2723",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

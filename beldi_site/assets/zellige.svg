@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Motif zellige marocain 8 branches">
+  <defs>
+    <pattern id="zellige-tile" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+        <!-- Etoile 8 branches centrale -->
+        <path d="M 60,12 L 68,42 L 98,34 L 78,60 L 108,68 L 78,60 L 98,86 L 68,78 L 60,108 L 52,78 L 22,86 L 42,60 L 12,52 L 42,60 L 22,34 L 52,42 Z"/>
+        <!-- Losange interne -->
+        <path d="M 60,32 L 88,60 L 60,88 L 32,60 Z"/>
+        <!-- Carre rotatif -->
+        <path d="M 60,42 L 78,60 L 60,78 L 42,60 Z"/>
+        <!-- Centre -->
+        <circle cx="60" cy="60" r="4" fill="currentColor"/>
+        <!-- Quarts de motif aux coins pour le tiling -->
+        <path d="M 0,0 L 12,12 M 0,0 L 0,12 M 0,0 L 12,0"/>
+        <path d="M 120,0 L 108,12 M 120,0 L 120,12 M 120,0 L 108,0"/>
+        <path d="M 0,120 L 12,108 M 0,120 L 0,108 M 0,120 L 12,120"/>
+        <path d="M 120,120 L 108,108 M 120,120 L 120,108 M 120,120 L 108,120"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="120" height="120" fill="url(#zellige-tile)"/>
+</svg>

@@ -1,0 +1,78 @@
+# ==========================================================
+# Beldi Fusion - .gitignore
+# ==========================================================
+
+# --- Dependencies (Node + Python) -------------------------
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# --- Projets externes de reference (pas a pousser) --------
+# beldi_fusion3 est un projet Astro de reference qu'on
+# utilise pour inspiration, pas a inclure dans le repo
+asset/beldi_fusion3/
+
+# --- Site clone (resultat du scraper, contenu externe) ----
+clone/
+
+# --- Dossiers de travail temporaires ----------------------
+site/
+tmp/
+.tmp/
+
+# --- Environment / secrets --------------------------------
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# --- OS generated files -----------------------------------
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- Editeurs / IDE ---------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.windsurf/
+.cursor/
+
+# --- Build / dist artifacts -------------------------------
+dist/
+build/
+out/
+.cache/
+.next/
+.astro/
+.parcel-cache/
+
+# --- Logs -------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Fichiers temporaires / backups -----------------------
+*.tmp
+*.bak
+*.backup
+*.orig
+*.rej
+
+# --- Microsoft Office lockfiles ---------------------------
+~$*
+*.~*

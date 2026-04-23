@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 140" width="100" height="140" fill="none">
+  <!-- Arche marocaine fer-a-cheval outbound, pour decor  -->
+  <path d="M 5,140 L 5,60 C 5,28 25,8 50,8 C 75,8 95,28 95,60 L 95,140 Z"
+        stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 12,140 L 12,62 C 12,34 28,16 50,16 C 72,16 88,34 88,62 L 88,140 Z"
+        stroke="currentColor" stroke-width="1" opacity=".5"/>
+</svg>

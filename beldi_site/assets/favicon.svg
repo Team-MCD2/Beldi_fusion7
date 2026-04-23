@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#3E2723"/>
+  <path d="M14 52 V28 C14 18 22 10 32 10 S50 18 50 28 V52 Z" fill="#E8A479"/>
+  <path d="M14 46 Q32 36 50 46 V52 H14 Z" fill="#9E4A35"/>
+  <text x="32" y="49" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-weight="700" fill="#FAF3E7">BF</text>
+</svg>

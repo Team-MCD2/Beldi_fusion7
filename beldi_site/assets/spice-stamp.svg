@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Tampon Beldi Fusion Toulouse depuis 2020">
+  <defs>
+    <!-- Cercle pour textPath externe -->
+    <path id="spice-ring-outer" d="M 60,60 m -46,0 a 46,46 0 1,1 92,0 a 46,46 0 1,1 -92,0"/>
+    <!-- Cercle pour textPath interne -->
+    <path id="spice-ring-inner" d="M 60,60 m -28,0 a 28,28 0 1,1 56,0 a 28,28 0 1,1 -56,0"/>
+  </defs>
+
+  <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Cercle externe : trait plein -->
+    <circle cx="60" cy="60" r="56" stroke-width="1"/>
+    <!-- Cercle intermediaire : pointille -->
+    <circle cx="60" cy="60" r="46" stroke-width="1" stroke-dasharray="1 2.5" opacity=".7"/>
+    <!-- Cercle central -->
+    <circle cx="60" cy="60" r="22" stroke-width="1.25"/>
+    <!-- Etoile 8 branches centrale (deux carres superposes) -->
+    <rect x="47" y="47" width="26" height="26"/>
+    <rect x="47" y="47" width="26" height="26" transform="rotate(45 60 60)"/>
+  </g>
+
+  <!-- Texte courbe exterieur -->
+  <text fill="currentColor" font-family="Inter, system-ui, sans-serif" font-size="6.5" letter-spacing="3" font-weight="500" text-transform="uppercase">
+    <textPath href="#spice-ring-outer" startOffset="0">
+      BELDI &#183; FUSION &#183; TOULOUSE &#183; DEPUIS 2020 &#183; HALAL &#183; FAIT MAISON &#183;
+    </textPath>
+  </text>
+
+  <!-- "BELDI" en Fraunces au centre -->
+  <text x="60" y="64" text-anchor="middle" fill="currentColor" font-family="Fraunces, Georgia, serif" font-size="12" font-weight="600" letter-spacing="1.5">
+    BELDI
+  </text>
+  <!-- "fusion" petit dessous -->
+  <text x="60" y="74" text-anchor="middle" fill="currentColor" font-family="Fraunces, Georgia, serif" font-size="5.5" font-style="italic" opacity=".75">
+    fusion
+  </text>
+
+  <!-- 4 petits dots cardinaux entre les 2 cercles -->
+  <g fill="currentColor">
+    <circle cx="60" cy="10" r="1.2"/>
+    <circle cx="110" cy="60" r="1.2"/>
+    <circle cx="60" cy="110" r="1.2"/>
+    <circle cx="10" cy="60" r="1.2"/>
+  </g>
+</svg>

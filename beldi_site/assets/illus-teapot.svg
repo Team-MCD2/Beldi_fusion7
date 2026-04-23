@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 200" width="220" height="200" role="img" aria-label="Theiere marocaine versant du the a la menthe">
+  <!-- Ligne de sol -->
+  <line x1="20" y1="150" x2="200" y2="150" stroke="currentColor" stroke-width="1" opacity=".25" stroke-linecap="round"/>
+
+  <!-- Theiere : corps bombé -->
+  <path d="M 42,78 Q 42,58 60,54 Q 88,54 94,78 Q 94,118 68,130 Q 42,118 42,78 Z"
+        fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Ligne de niveau (séparation couvercle / corps) -->
+  <path d="M 44,60 Q 68,56 92,60" fill="none" stroke="currentColor" stroke-width=".9" opacity=".5" stroke-linecap="round"/>
+
+  <!-- Couvercle : base ellipse + dôme -->
+  <ellipse cx="68" cy="54" rx="22" ry="4" fill="none" stroke="currentColor" stroke-width="1.25"/>
+  <path d="M 50,52 Q 54,38 68,36 Q 82,38 86,52" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/>
+
+  <!-- Pompon / pointe -->
+  <line x1="68" y1="36" x2="68" y2="26" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+  <circle cx="68" cy="24" r="2.2" fill="currentColor" stroke="none"/>
+
+  <!-- Anse arquee (deux traits = volume) -->
+  <path d="M 42,74 Q 14,78 14,96 Q 14,114 42,116" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 42,80 Q 20,84 20,96 Q 20,110 42,112" fill="none" stroke="currentColor" stroke-width="1" opacity=".55" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Bec verseur elance -->
+  <path d="M 94,72 Q 106,76 112,90" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 94,80 Q 104,82 108,90" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="108" y1="90" x2="112" y2="90" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+
+  <!-- Jet de the anime -->
+  <path d="M 110,90 Q 120,108 128,130" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" opacity=".6">
+    <animate attributeName="opacity" values=".3;.8;.3" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Gravures zellige sur le corps (3 niveaux) -->
+  <g fill="none" stroke="currentColor" stroke-width=".9" opacity=".45" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="68" cy="82" rx="18" ry="2.5"/>
+    <path d="M 52,94 L 56,90 L 60,94 L 64,90 L 68,94 L 72,90 L 76,94 L 80,90 L 84,94"/>
+    <circle cx="68" cy="108" r="5"/>
+    <line x1="63" y1="108" x2="73" y2="108"/>
+    <line x1="68" y1="103" x2="68" y2="113"/>
+  </g>
+
+  <!-- Verre a the recevant le the -->
+  <g transform="translate(130 130)">
+    <!-- corps du verre trapezoidal -->
+    <path d="M -14,0 L -12,42 L 12,42 L 14,0 Z" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/>
+    <line x1="-14" y1="6" x2="14" y2="6" stroke="currentColor" stroke-width="1" opacity=".5"/>
+    <!-- niveau du the -->
+    <line x1="-12.5" y1="16" x2="12.5" y2="16" stroke="currentColor" stroke-width="1" opacity=".55">
+      <animate attributeName="y1" values="16;14;16" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="16;14;16" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <!-- petits dots zellige -->
+    <g fill="currentColor" opacity=".55">
+      <circle cx="-6" cy="28" r=".8"/>
+      <circle cx="6" cy="28" r=".8"/>
+      <circle cx="0" cy="33" r=".8"/>
+    </g>
+  </g>
+</svg>

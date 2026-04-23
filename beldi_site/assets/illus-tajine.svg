@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Illustration d'un tajine marocain fumant">
+  <!-- Ligne de sol -->
+  <line x1="24" y1="150" x2="176" y2="150" stroke="currentColor" stroke-width="1" opacity=".35" stroke-linecap="round"/>
+
+  <!-- Vapeur animee (3 fils ondulants) -->
+  <g fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" opacity=".55">
+    <path d="M 82,66 Q 78,48 88,35 Q 96,22 90,8">
+      <animate attributeName="opacity" values="0;.6;0" dur="3s" repeatCount="indefinite" begin="0s"/>
+    </path>
+    <path d="M 100,62 Q 104,42 96,28 Q 88,12 102,2">
+      <animate attributeName="opacity" values="0;.7;0" dur="3.4s" repeatCount="indefinite" begin=".7s"/>
+    </path>
+    <path d="M 118,66 Q 122,48 114,36 Q 108,22 120,8">
+      <animate attributeName="opacity" values="0;.6;0" dur="3.2s" repeatCount="indefinite" begin="1.5s"/>
+    </path>
+  </g>
+
+  <!-- Couvercle conique (silhouette line-art) -->
+  <path d="M 62,96 Q 62,88 72,88 L 128,88 Q 138,88 138,96" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 68,92 Q 68,70 100,68 Q 132,70 132,92" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Pointeau couvercle -->
+  <line x1="100" y1="68" x2="100" y2="58" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+  <circle cx="100" cy="56" r="2.2" fill="currentColor" stroke="none"/>
+
+  <!-- Details zellige sur couvercle : 3 losanges -->
+  <g fill="none" stroke="currentColor" stroke-width="1" opacity=".45" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M 85,82 L 90,77 L 95,82 L 90,87 Z"/>
+    <path d="M 105,82 L 110,77 L 115,82 L 110,87 Z"/>
+  </g>
+
+  <!-- Plat / base : ellipse superieure + corps trapezoidal -->
+  <ellipse cx="100" cy="98" rx="44" ry="5" fill="none" stroke="currentColor" stroke-width="1.25"/>
+  <path d="M 56,98 Q 56,130 78,140 L 122,140 Q 144,130 144,98" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/>
+
+  <!-- Motif zigzag berbere sur le plat -->
+  <path d="M 62,118 L 66,114 L 70,118 L 74,114 L 78,118 L 82,114 L 86,118 L 90,114 L 94,118 L 98,114 L 102,118 L 106,114 L 110,118 L 114,114 L 118,118 L 122,114 L 126,118 L 130,114 L 134,118 L 138,114"
+        fill="none" stroke="currentColor" stroke-width=".9" opacity=".5" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- 4 dots decoratifs rythmant le plat -->
+  <g fill="currentColor" opacity=".5">
+    <circle cx="72" cy="128" r="1"/>
+    <circle cx="86" cy="130" r="1"/>
+    <circle cx="114" cy="130" r="1"/>
+    <circle cx="128" cy="128" r="1"/>
+  </g>
+</svg>

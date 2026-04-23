@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" width="240" height="160" role="img" aria-label="Dromadaire marocain silhouette">
+  <!-- Ligne de sol -->
+  <line x1="40" y1="134" x2="210" y2="134" stroke="currentColor" stroke-width="1" opacity=".3" stroke-linecap="round"/>
+
+  <g fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Corps + deux bosses (ligne continue) -->
+    <path d="M 60,100
+             Q 60,78 78,74
+             Q 84,56 100,52
+             Q 110,46 118,54
+             Q 122,58 124,62
+             Q 138,58 150,62
+             Q 160,48 172,56
+             Q 184,50 194,60
+             Q 202,66 202,80
+             Q 202,92 194,100"/>
+
+    <!-- Cou + tete (courbe descendant du front du corps) -->
+    <path d="M 118,54 Q 112,46 108,38 Q 104,32 100,32 Q 94,32 92,38 Q 92,44 96,46 L 104,52"/>
+
+    <!-- Oreille -->
+    <path d="M 104,36 L 106,30 L 110,36"/>
+
+    <!-- Museau + ligne de machoire -->
+    <path d="M 96,46 Q 94,50 98,52"/>
+
+    <!-- Queue (fine, avec petite houppette) -->
+    <path d="M 60,100 Q 52,102 48,108 Q 46,114 50,118"/>
+    <path d="M 48,118 L 46,124 M 50,118 L 52,124 M 52,118 L 50,124" stroke-width="1"/>
+
+    <!-- 4 pattes : deux lignes paralleles par patte -->
+    <path d="M 74,104 L 70,132 M 80,104 L 78,132" />
+    <path d="M 124,100 L 120,132 M 132,100 L 130,132"/>
+    <path d="M 166,102 L 162,132 M 174,102 L 172,132"/>
+    <path d="M 196,100 L 194,132 M 202,100 L 200,132"/>
+
+    <!-- Sabots (petits traits horizontaux) -->
+    <path d="M 68,132 L 82,132 M 118,132 L 132,132 M 160,132 L 174,132 M 192,132 L 204,132"/>
+  </g>
+
+  <!-- Tapis de selle : 2 rectangles tresses -->
+  <g fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" opacity=".75">
+    <path d="M 142,58 L 170,58 L 170,66 L 142,66 Z"/>
+    <!-- Zigzag decoratif -->
+    <path d="M 144,62 L 147,60 L 150,62 L 153,60 L 156,62 L 159,60 L 162,62 L 165,60 L 168,62"/>
+    <!-- Franges -->
+    <path d="M 142,66 L 141,70 M 146,66 L 145,70 M 150,66 L 149,70 M 154,66 L 153,70 M 158,66 L 157,70 M 162,66 L 161,70 M 166,66 L 165,70 M 170,66 L 169,70"/>
+  </g>
+
+  <!-- Oeil + narine (dots) -->
+  <circle cx="100" cy="40" r=".8" fill="currentColor" stroke="none"/>
+  <circle cx="94" cy="44" r=".6" fill="currentColor" stroke="none"/>
+
+  <!-- Clochette (dot sur collier imagine) -->
+  <circle cx="108" cy="54" r="1.2" fill="currentColor" stroke="none" opacity=".7"/>
+</svg>

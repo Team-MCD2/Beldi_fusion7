@@ -1,0 +1,19 @@
+{
+  "name": "site-cloner",
+  "version": "1.0.0",
+  "description": "Analyse un site web et tente de le reproduire localement (port Node.js de site_cloner.py).",
+  "main": "site_cloner.js",
+  "bin": {
+    "site-cloner": "site_cloner.js"
+  },
+  "scripts": {
+    "start": "node site_cloner.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

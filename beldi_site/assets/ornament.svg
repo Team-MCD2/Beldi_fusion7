@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" width="140" height="140" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Etoile marocaine a 8 branches, trace legerement irregulier -->
+  <path d="M70 8 C72 28 78 36 96 40 C78 44 72 52 70 72 C68 52 62 44 44 40 C62 36 68 28 70 8 Z"
+        transform="rotate(0 70 70)"/>
+  <path d="M70 8 C72 28 78 36 96 40 C78 44 72 52 70 72 C68 52 62 44 44 40 C62 36 68 28 70 8 Z"
+        transform="rotate(45 70 70)"/>
+  <circle cx="70" cy="70" r="14"/>
+  <circle cx="70" cy="70" r="3.5" fill="currentColor"/>
+  <!-- 4 pointes exterieures -->
+  <path d="M70 4 L70 14 M70 126 L70 136 M4 70 L14 70 M126 70 L136 70"/>
+  <!-- 4 points cardinaux -->
+  <circle cx="70" cy="2" r="1.6" fill="currentColor"/>
+  <circle cx="70" cy="138" r="1.6" fill="currentColor"/>
+  <circle cx="2" cy="70" r="1.6" fill="currentColor"/>
+  <circle cx="138" cy="70" r="1.6" fill="currentColor"/>
+</svg>

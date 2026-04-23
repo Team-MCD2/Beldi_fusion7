@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/raw/
+
+Sitemap: https://beldifusion-toulouse.fr/sitemap.xml
