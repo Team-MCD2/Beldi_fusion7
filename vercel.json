@@ -1,8 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "outputDirectory": "beldi_site",
   "cleanUrls": true,
   "trailingSlash": false,
-  "outputDirectory": "beldi_site",
   "headers": [
     {
       "source": "/assets/(.*)",
