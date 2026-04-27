@@ -1,3 +1,10 @@
+const fs = require('fs');
+const path = require('path');
+
+const files = ['index.html', 'carte.html', 'histoire.html', 'galerie.html', 'contact.html', 'partials/footer.html'];
+const dir = 'C:/Users/PC/Desktop/projet_actu/Beldi_fusion7/beldi_site';
+
+const newFooterHTML = `
 <footer class="site-footer">
   <div class="ribbon-container">
     <div class="ribbon-content">
@@ -88,4 +95,17 @@
       </a>
     </div>
   </div>
-</footer>
+</footer>`;
+
+files.forEach(f => {
+  const p = path.join(dir, f);
+  if (fs.existsSync(p)) {
+    let content = fs.readFileSync(p, 'utf8');
+    
+    // Replace the entire footer
+    content = content.replace(/<footer class="site-footer">[\s\S]*?<\/footer>/, newFooterHTML.trim());
+    
+    fs.writeFileSync(p, content);
+    console.log('Replaced footer in ' + f);
+  }
+});
