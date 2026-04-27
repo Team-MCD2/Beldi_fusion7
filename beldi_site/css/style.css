@@ -155,7 +155,7 @@ em { font-style: italic; font-variation-settings: "opsz" 144, "SOFT" 100; }
   padding: 1.1rem 0;
 }
 .brand { display: flex; align-items: center; gap: .7rem; }
-.brand img { width: 44px; height: auto; }
+.brand img { width: 72px; height: auto; }
 .brand-text { display: flex; flex-direction: column; line-height: 1; }
 .brand-name {
   font-family: var(--font-display); font-size: 1.25rem;
