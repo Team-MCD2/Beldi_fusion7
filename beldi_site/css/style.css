@@ -2023,7 +2023,7 @@ em { font-style: italic; font-variation-settings: "opsz" 144, "SOFT" 100; }
 
 .video-triptych {
   display: grid;
-  grid-template-columns: 1.1fr 1fr 1.1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.4rem;
   align-items: stretch;
 }
@@ -2038,9 +2038,7 @@ em { font-style: italic; font-variation-settings: "opsz" 144, "SOFT" 100; }
   transition: transform .5s ease, box-shadow .5s ease;
 }
 .video-card.video-card-tall { aspect-ratio: 9 / 14; }
-.video-card:nth-child(2) { transform: translateY(2.2rem); }
 .video-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(28,20,18,.28); }
-.video-card:nth-child(2):hover { transform: translateY(2.2rem) translateY(-6px); }
 .video-card video {
   position: absolute; inset: 0;
   width: 100%; height: 100%;

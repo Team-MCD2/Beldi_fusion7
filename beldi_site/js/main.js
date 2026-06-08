@@ -264,7 +264,7 @@
   const isTouch = window.matchMedia('(pointer: coarse)').matches;
 
   // ---------- Curseur custom + LABEL CONTEXTUEL ----------
-  if (isFinePointer && !prefersReducedMotion) {
+  if (false && isFinePointer && !prefersReducedMotion) {
     const dot = document.createElement('div');
     const ring = document.createElement('div');
     const label = document.createElement('div');
